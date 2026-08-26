@@ -1,0 +1,6 @@
+{"data":[{"operation":"convert","input_format":"mp4","output_format":"mp3","engine":"ffmpeg","engine_versions":[{"version":"6.1.4","default":true},{"version":"7.1.3"},{"version":"8.1.2","latest":true}],"options":[{"name":"audio_codec","type":"enum","default":"mp3","description":"Codec
+to encode the audio. Use \"copy\" to copy the stream without re-encoding.","possible_values":["copy","mp3"]},{"name":"audio_qscale","type":"integer","default":0,"description":"Controls the bitrate range for the VBR MP3. The range is 0-9 where a lower
+value is a higher quality. "},{"name":"audio_bitrate","type":"integer","default":null,"description":"Constant bitrate for the MP3."},{"name":"volume","type":"float","default":null,"description":"Change the audio volume, whereas 1.0 is the current volume.
+Example: a value of 1.1 increases the volume by 10%."},{"name":"channels","type":"integer","default":null,"description":"Set the number of audio channels. Example: a value of 1 converts the file to mono."},{"name":"sample_rate","type":"integer","default":null,"description":"Set
+the audio sampling frequency in Hz, for example 48000 or 44100."},{"name":"trim_start","type":"string","default":null,"description":"Trim start timestamp (HH:MM:SS)"},{"name":"trim_end","type":"string","default":null,"description":"Trim end timestamp
+(HH:MM:SS)"}],"credits":1,"meta":{"group":"audio"}}]}

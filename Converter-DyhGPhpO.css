@@ -1,0 +1,104 @@
+.animate-orbit-slow[data-v-9077268a] {
+    animation: 90s linear infinite orbit-spin-9077268a
+}
+
+.animate-orbit-fast[data-v-9077268a] {
+    animation: 60s linear infinite reverse orbit-spin-9077268a
+}
+
+@keyframes orbit-spin-9077268a {
+    0% {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.animate-spin-pulse[data-v-9077268a] {
+    animation: 3s ease-in-out infinite spin-pulse-9077268a
+}
+
+@keyframes spin-pulse-9077268a {
+    0%,
+    to {
+        opacity: .85;
+        transform: rotate(0)
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(180deg)
+    }
+}
+
+.animate-arrow-sweep[data-v-9077268a] {
+    animation: 2.4s ease-in-out infinite arrow-sweep-9077268a
+}
+
+@keyframes arrow-sweep-9077268a {
+    0%,
+    to {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+    50% {
+        opacity: 1;
+        transform: translate(100%)
+    }
+}
+
+.animate-output-pulse[data-v-9077268a] {
+    animation: 3s ease-in-out infinite output-pulse-9077268a
+}
+
+@keyframes output-pulse-9077268a {
+    0%,
+    to {
+        box-shadow: inset 0 1px #ffffff0f, 0 8px 32px #be32322e
+    }
+    50% {
+        box-shadow: inset 0 1px #ffffff0f, 0 8px 38px #dc505052
+    }
+}
+
+.card-flip-enter-active[data-v-9077268a],
+.card-flip-leave-active[data-v-9077268a] {
+    transition: transform .45s cubic-bezier(.34, 1.4, .6, 1), opacity .3s
+}
+
+.card-flip-enter-from[data-v-9077268a] {
+    opacity: 0;
+    transform: rotateX(-70deg)translateY(8px)
+}
+
+.card-flip-leave-to[data-v-9077268a] {
+    opacity: 0;
+    transform: rotateX(70deg)translateY(-8px)
+}
+
+.fade-enter-active[data-v-9077268a],
+.fade-leave-active[data-v-9077268a] {
+    transition: opacity .2s
+}
+
+.fade-enter-from[data-v-9077268a],
+.fade-leave-to[data-v-9077268a] {
+    opacity: 0
+}
+
+.operation-swap-enter-active[data-v-7f8da577],
+.operation-swap-leave-active[data-v-7f8da577] {
+    transition: opacity .35s, transform .45s cubic-bezier(.34, 1.4, .6, 1), filter .35s
+}
+
+.operation-swap-enter-from[data-v-7f8da577] {
+    opacity: 0;
+    filter: blur(4px);
+    transform: scale(.92)
+}
+
+.operation-swap-leave-to[data-v-7f8da577] {
+    opacity: 0;
+    filter: blur(4px);
+    transform: scale(1.04)
+}
